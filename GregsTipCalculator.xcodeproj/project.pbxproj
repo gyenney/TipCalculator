@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					4DE948201E75BF6300171F85 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SADLDKBLX8;
 						ProvisioningStyle = Automatic;
 					};
 					4DE948341E75BF6500171F85 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SADLDKBLX8;
 				INFOPLIST_FILE = GregsTipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dude-X.GregsTipCalculator";
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SADLDKBLX8;
 				INFOPLIST_FILE = GregsTipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dude-X.GregsTipCalculator";
