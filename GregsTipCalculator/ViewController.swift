@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func calculateTip(_ sender: Any) {
+    @IBAction func calculateTip(_ sender: AnyObject) {
 
         let tipPercentage = [0.18, 0.20, 0.25]
         
