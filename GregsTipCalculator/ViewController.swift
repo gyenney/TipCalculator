@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func calculateTip(_ sender: AnyObject) {
+    @IBAction func calculateTip(_ sender: Any) {
 
         let tipPercentage = [0.18, 0.20, 0.25]
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentage[tipControl.selectedSegmentIndex]
         
         let total = bill + tip
-        
+                
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
         
