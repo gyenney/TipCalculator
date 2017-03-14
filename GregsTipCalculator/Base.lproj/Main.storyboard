@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" id="EuM-7I-3b7">
-                                <rect key="frame" x="22" y="274" width="330" height="9"/>
+                                <rect key="frame" x="40" y="274" width="263" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="RO9-wo-IPj">
-                                <rect key="frame" x="72" y="116" width="231" height="29"/>
+                                <rect key="frame" x="40" y="104" width="263" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="18%"/>
@@ -101,7 +101,13 @@
                             <outletCollection property="gestureRecognizers" destination="YNl-we-c18" appends="YES" id="u43-ig-41g"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Greg's Tip Calculator" id="ewx-rg-fGe"/>
+                    <navigationItem key="navigationItem" title="Greg's Tip Calculator" id="ewx-rg-fGe">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="zqx-lZ-hMx">
+                            <connections>
+                                <segue destination="MAt-5T-w3u" kind="push" id="evG-uC-Kex"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Zhs-MC-Ju5" id="S8O-14-0U6"/>
                         <outlet property="tipControl" destination="RO9-wo-IPj" id="1tk-l9-Zz7"/>
@@ -117,6 +123,52 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="672.5" y="117.5"/>
+        </scene>
+        <!--Greg's Tip Calculator-->
+        <scene sceneID="ons-xh-BDH">
+            <objects>
+                <viewController id="MAt-5T-w3u" customClass="SettingsViewController" customModule="GregsTipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tht-s2-Q5c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sgi-B2-SM1">
+                                <rect key="frame" x="99" y="163" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" id="gMV-JC-DIw">
+                                <rect key="frame" x="81" y="215" width="213" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4nJ-mF-Mbt">
+                                <rect key="frame" x="100" y="71" width="175" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Settings">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="ChalkboardSE-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Greg's Tip Calculator" id="Wvl-lc-OJu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLy-sk-4aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185.5" y="117.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5M7-o9-HUD">
