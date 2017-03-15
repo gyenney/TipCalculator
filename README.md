@@ -6,7 +6,7 @@ This is a simple tip calculator from the CodePath youtube tutorial.
 
 
 
-# Pre-work - *Name of App Here*
+# Pre-work - Gregs Tip Calculator
 
 Gregs Tip Calculator is a tip calculator application for iOS.
 
